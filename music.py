@@ -15,7 +15,7 @@ from dotenv import load_dotenv  # มีไว้แอบ token ครับ 4 
 load_dotenv()
 token = os.getenv('TOKEN')
 
-bot = commands.Bot(command_prefix='#',help_command=None)
+bot = commands.Bot(command_prefix='%',help_command=None)
 
 ytdl_format_options = {
     'format': 'bestaudio/best',
