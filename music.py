@@ -194,6 +194,10 @@ async def add(ctx,a: int,b:int):
 
 @bot.event
 async def on_message(message):
+    if message.content == '%joine':
+        embed = discord.Embed()
+        embed.add_field(name="HI {0}".format(str(message.author.name)),value="this is {0} You can use different commands using % to use.".format(bot.user.name),inline=False)
+        await message.channel.send(embed=embed)
     if message.content == '#user':
         await message.channel.send('hello ' + str(message.author.name))
     elif message.content == '#logout':
