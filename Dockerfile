@@ -8,4 +8,4 @@ COPY . /app
 WORKDIR /app
 
 # Run the code when the container starts
-CMD ["python", "bot.py"]
+CMD ["python", "music.py"]
